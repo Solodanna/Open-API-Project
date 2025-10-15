@@ -21,6 +21,13 @@ h1 {
   color: #2c3e50;
 }
 
+.card {
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
 /* Container for API data */
 .api-container {
   max-width: 600px;
@@ -47,4 +54,24 @@ h1 {
   .api-container {
     padding: 15px;
   }
+}
+
+/* Center the artwork title and image horizontally */
+#artwork {
+  text-align: center;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+#artwork h2 {
+  margin: 0 0 12px 0;
+  font-size: 1.4rem;
+}
+
+#artwork img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
