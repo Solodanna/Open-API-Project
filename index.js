@@ -41,7 +41,7 @@ async function showRandomArtwork() {
     const countData = await countRes.json();
     const total = countData.pagination.total;
 
-    // take a random page and fetch one artwork from it
+    // take a random page and fetch one artwork
     const randomPage = Math.floor((Math.random() * total) / 1); // 1 artwork per page
     const artworkRes = await fetch(
       `https://api.artic.edu/api/v1/artworks?page=${randomPage}&limit=1&fields=id,title,image_id`
