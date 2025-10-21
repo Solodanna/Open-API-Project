@@ -9,11 +9,36 @@
     <h1>Welcome to My Open API Project</h1>
 
     <div class="api-container" id="content">
+      <div
+        class="toggle-row"
+        role="tablist"
+        aria-label="Choose content to display"
+      >
+        <button
+          id="btn-weather"
+          class="toggle-btn"
+          role="tab"
+          aria-selected="true"
+          aria-controls="weather-container"
+          >Weather</button
+        >
+        <button
+          id="btn-artwork"
+          class="toggle-btn"
+          role="tab"
+          aria-selected="false"
+          aria-controls="artwork"
+          >Artwork</button
+        >
+      </div>
+
       <div id="loading" hidden></div>
       <div id="data"></div>
-      <div id="weather-container"></div>
+
+      <div id="weather-container" class="card" aria-live="polite"></div>
     </div>
-    <div id="artwork"></div>
+
+    <div id="artwork" hidden></div>
 
     <script src="index.js"></script>
   </body>
